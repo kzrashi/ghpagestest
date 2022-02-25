@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        run: docker run --rm -v site111/:/docs squidfunk/mkdocs-material build
+        run: docker run --rm -v `pwd`/site111:/docs squidfunk/mkdocs-material build
       # - run: docker run --rm -it -v ~/.ssh:/root/.ssh -v `pwd`:/docs squidfunk/mkdocs-material gh-deploy 
 
       - name: Deploy
