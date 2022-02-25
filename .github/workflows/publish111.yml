@@ -5,10 +5,10 @@ name: github pages
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
-  paths:
-    - 'site111/**'
-    - '.github/workflows/publish111.yml'
   push:
+    paths:
+      - 'site111/**'
+      - '.github/workflows/publish111.yml'
     branches: [ main ]
 
   # # Allows you to run this workflow manually from the Actions tab
