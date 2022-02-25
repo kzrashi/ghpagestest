@@ -8,6 +8,7 @@ on:
   push:
     paths:
       # - 'site111/**'
+      - './site111/**'
       - '.github/workflows/publish111.yml'
     branches: [ main ]
 
