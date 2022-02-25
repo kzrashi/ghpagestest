@@ -20,8 +20,8 @@ jobs:
     runs-on: ubuntu-18.04
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - pwd
-      - docker run --rm -v .:/docs squidfunk/mkdocs-material build
+      - run: pwd
+      - run: docker run --rm -v .:/docs squidfunk/mkdocs-material build
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # - docker run --rm -it -v ~/.ssh:/root/.ssh -v `pwd`:/docs squidfunk/mkdocs-material gh-deploy 
       # - uses: actions/checkout@v2
