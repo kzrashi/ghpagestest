@@ -20,8 +20,8 @@ jobs:
     runs-on: ubuntu-18.04
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/checkout@v2
       - name: Build
-        uses: actions/checkout@v2
         run: docker run --rm -v `pwd`:/docs squidfunk/mkdocs-material build
       # - run: docker run --rm -it -v ~/.ssh:/root/.ssh -v `pwd`:/docs squidfunk/mkdocs-material gh-deploy 
 
