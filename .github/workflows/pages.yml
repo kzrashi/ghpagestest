@@ -1,15 +1,15 @@
 # This is a basic workflow to help you get started with Actions
 
-name: "push test"
+name: "pages"
 
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
-  # deployment
+  page_build
   # deployment_status
-  push:
-    branches:
-      - gh-pages
+  # push:
+  #   branches:
+  #     - gh-pages
 
   # # Allows you to run this workflow manually from the Actions tab
   # workflow_dispatch:
@@ -18,9 +18,9 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "deploy"
-  push-gh-pages-test:
+  page_build-test:
     # The type of runner that the job will run on
     runs-on: ubuntu-18.04
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - run: echo "push-gh-pages-test"
+      - run: echo "page_build"
