@@ -22,7 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: pwd
-      - run: docker run --rm -v `pwd`:/docs squidfunk/mkdocs-material build
+      # - run: docker run --rm -v `pwd`:/docs squidfunk/mkdocs-material build
+      - run: docker run --rm -it -v ~/.ssh:/root/.ssh -v `pwd`:/docs squidfunk/mkdocs-material gh-deploy 
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # - docker run --rm -it -v ~/.ssh:/root/.ssh -v `pwd`:/docs squidfunk/mkdocs-material gh-deploy 
       # - uses: actions/checkout@v2

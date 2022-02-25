@@ -1,6 +1,6 @@
 # Project information
 ## 左上のサイト名
-site_name: test
+site_name: test111
 site_url: https://kzrashi.github.io/python-grammer/
 site_author: kzrashi
 site_description: >-
@@ -70,7 +70,7 @@ extra_javascript:
 
 
 
-# Google Analytics
-google_analytics:
-  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
-  - auto
+# # Google Analytics
+# google_analytics:
+#   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+#   - auto
