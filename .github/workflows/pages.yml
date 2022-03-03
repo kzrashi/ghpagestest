@@ -5,8 +5,8 @@ name: "page_build-test"
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
-  - workflow_dispatch
-  - page_build:
+  workflow_dispatch:
+  page_build:
     paths:
       - '!site222/**'
     branches: [ gh-pages ]
