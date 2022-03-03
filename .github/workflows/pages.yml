@@ -6,7 +6,11 @@ name: "page_build-test"
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   - workflow_dispatch
-  - page_build
+  - page_build:
+    paths:
+      - '!site222/**'
+    branches: [ gh-pages ]
+
   # deployment_status
   # push:
   #   branches:
