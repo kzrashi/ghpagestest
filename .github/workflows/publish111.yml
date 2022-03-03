@@ -9,6 +9,8 @@ on:
     paths:
       - 'AAA/**'
       - '.github/workflows/publish111.yml'
+    paths-ignore:
+      - 'AAA/222/**'
     branches: [ main ]
 
   # # Allows you to run this workflow manually from the Actions tab
