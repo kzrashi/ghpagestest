@@ -33,7 +33,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site222/site
+          publish_dir: ./AAA/site222/site
           destination_dir: ./site222/
 
 
